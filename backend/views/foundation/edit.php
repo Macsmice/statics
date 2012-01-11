@@ -6,6 +6,10 @@
 
 	<script src="foundation/javascripts/foundation.js"></script>
 	<script src="foundation/javascripts/app.js"></script>
+	<script src="http://js.nicedit.com/nicEdit-latest.js" type="text/javascript"></script>
+	<script type="text/javascript">bkLib.onDomLoaded(nicEditors.allTextAreas);
+						new nicEditor({maxHeight : 100}).panelInstance('body');</script>
+
 	
 	<link rel="stylesheet" href="./foundation/stylesheets/foundation.css">
 	<link rel="stylesheet" href="./custom/css/datepicker.css"">
@@ -38,7 +42,7 @@
 		<li class="active" id="contentTab">
 		
 			<fieldset>
-				<h2>Some header</h2>
+				<h2>Page details</h2>
 				<div class="input-row">
 					<label for="title">Title</label>
 					<input type="text" class="oversize input-text" id="title" name="title" />
@@ -56,6 +60,14 @@
 					<label for="publish1"><input type="radio" id="publish1" name="publish" value="1" />yes</label>
 					<label for="publish0"><input type="radio" id="publish0" name="publish" value="0" />no</label>
 				</div>
+				<div class="input-row">
+					<label for="body">Body</label>
+				</div>
+				
+			</fieldset>
+			<fieldset>
+				<h2>Page content</h2>
+				<textarea cols="50" rows="10" id="body"><##></textarea>
 			</fieldset>
 						
 		</li>
