@@ -1,0 +1,10 @@
+.actions li {
+	display: inline-block;
+}
+table {
+	width: 100%;
+}
+
+/* jQuery Tools Tabs: compatibility with Foundation */
+dl.tabs dd a.active { display: block; width: auto; height: 29px; padding: 0 9px; line-height: 30px; border: solid 1px #ddd; margin: 0 -1px 0 0; color: #555; background: #eee; }
+dl.tabs dd a.current { background: #fff; border-width: 1px 1px 0 1px; height: 30px; }

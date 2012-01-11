@@ -1,0 +1,6 @@
+body {
+	padding-top: 40px; /* When using the topbar on any page, be sure to account for the overlap it causes by adding padding-top: 40px; to your body.*/
+}
+.actions li {
+	display: inline-block;
+}
