@@ -4,19 +4,9 @@
 	<meta charset="utf-8" />
 	<title>Edit View</title>
 
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-	<script src="http://cdn.jquerytools.org/1.2.6/jquery.tools.min.js"></script>
-	<script src="http://cdn.jquerytools.org/1.2.6/form/jquery.tools.min.js"></script>
+	<script src="foundation/javascripts/foundation.js"></script>
+	<script src="foundation/javascripts/app.js"></script>
 	
-	<script>
-	jQuery(document).ready(function($) {
-		$(function() {
-			$(".tabs").tabs("div.tabs-content > div");
-			$(":date").dateinput()
-		});
-	});
-	</script>
-
 	<link rel="stylesheet" href="./foundation/stylesheets/foundation.css">
 	<link rel="stylesheet" href="./custom/css/datepicker.css"">
 	<link rel="stylesheet" href="./custom/css/custom.css">
@@ -44,8 +34,8 @@
 	</dl>
 	
 	<!-- tab "panes" -->
-	<div class="tabs-content">
-		<div class="active" id="content">
+	<ul class="tabs-content contained">
+		<li class="active" id="contentTab">
 		
 			<fieldset>
 				<h2>Some header</h2>
@@ -68,10 +58,10 @@
 				</div>
 			</fieldset>
 						
-		</div>
-		<div id="access">
-		</div>
-		<div id="props">
+		</li>
+		<li id="accessTab">
+		</li>
+		<li id="propsTab">
 		
 			<fieldset>
 				<h2>Parameter Set</h2>
@@ -79,9 +69,9 @@
 					<label for="options">Some options</label>
 					<select id="options" name="options">
 						<option value="">Please select</option>
-						<option value="1"></option>
-						<option value="2"></option>
-						<option value="3"></option>
+						<option value="1">Option one</option>
+						<option value="2">Option two</option>
+						<option value="3">Option three</option>
 					</select>
 				</div>
 				<div class="input-row">
@@ -102,8 +92,8 @@
 				</div>
 			</fieldset>
 			
-		</div>
-	</div>
+		</li>
+	</ul>
 	
 	</form>
 
