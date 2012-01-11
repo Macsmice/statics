@@ -1,22 +1,3 @@
-<?php
-// Set up a fake data set
-$data = array();
-for($i=1;$i<=10;$i++) {
-	$data[] = array(
-		'id'		=> $i,
-		'title'		=> 'Title '.$i,
-		'alias'		=> 'title_'.$i,
-		'author'	=> 'Me',
-		'date'		=> date("Y-m-d")
-	);
-}
-
-// Set up sortables
-$sortable = array('id', 'title', 'author', 'date');
-
-// Set up filterables
-$filterable = array('title', 'author');
-?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
